@@ -3,4 +3,13 @@
     <string name="next">Next</string>
     <string name="please_enter_your_job_field">Please enter your Job Field</string>
     <string name="enter_here">Enter Here</string>
+    <string name="next2">Next</string>
+    <string name="previous2">previous</string>
+    <string name="question3">Do you like this image?</string>
+    <string name="previous">previous</string>
+    <string name="do_you_like_this_caption_for_the_image_previous">Do you like this caption for the image previous</string>
+    <string name="textview">TextView</string>
+    <string name="do_you_like_this_caption_for_the_previous_image">Do you like this caption for the previous image?</string>
+    <string name="please_enter_your_twitter_api_key">Please enter your Twitter API key</string>
+    <string name="would_you_like_to_post_this_to_your_twitter">Would you like to post this to your Twitter?</string>
 </resources>
