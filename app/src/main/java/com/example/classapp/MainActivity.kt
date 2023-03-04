@@ -6,27 +6,29 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.aallam.openai.api.image.ImageEdit
-import com.aallam.openai.api.image.ImageSize
-import com.aallam.openai.client.OpenAI
-import okio.source
+
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var question1: TextView
-    private lateinit var answer1: EditText
-    private lateinit var next_Activity_button: Button
+    private lateinit var submitbutton: Button
+    private lateinit var editText: EditText
+    private lateinit var jobname: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        next_Activity_button = findViewById(R.id.button)
+        //title = "Twitter post by job"
+        editText = findViewById(R.id.jobfield)
         question1 = findViewById(R.id.question)
-        //var editTextHello = answer1.text.toString()
-        next_Activity_button.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+        submitbutton = findViewById(R.id.submitbutton)
+        submitbutton.setOnClickListener {
+            val intent = Intent(this,SecondActivity::class.java)
+            jobname = editText.text.toString()
+            intent.putExtra("jobanswer", jobname)
             startActivity(intent)
         }
+
     }
-}
+    }
 

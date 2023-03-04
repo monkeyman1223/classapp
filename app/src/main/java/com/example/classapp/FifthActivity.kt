@@ -10,8 +10,10 @@ class FifthActivity : AppCompatActivity() {
     private lateinit var question5: TextView
     private lateinit var next_button: Button
     private lateinit var previous_button: Button
-
+    private lateinit var APIKey: String
     override fun onCreate(savedInstanceState: Bundle?) {
+        val startingIntent = intent
+        val APIKey = startingIntent.getStringExtra("APIKey")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fifth)
         previous_button = findViewById(R.id.previous5)

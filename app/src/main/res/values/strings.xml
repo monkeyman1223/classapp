@@ -12,4 +12,6 @@
     <string name="do_you_like_this_caption_for_the_previous_image">Do you like this caption for the previous image?</string>
     <string name="please_enter_your_twitter_api_key">Please enter your Twitter API key</string>
     <string name="would_you_like_to_post_this_to_your_twitter">Would you like to post this to your Twitter?</string>
+    <string name="answer3">TextView</string>
+    <string name="submit">submit</string>
 </resources>

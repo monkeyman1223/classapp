@@ -10,19 +10,26 @@ import androidx.core.content.ContextCompat.startActivity
 
 class ForthActivity : AppCompatActivity() {
     private lateinit var question4: TextView
-    private lateinit var next_button: Button
+    private lateinit var submitbutton: Button
     private lateinit var previous_button: Button
+    private lateinit var edittext: EditText
+    private lateinit var APIKey: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forth)
         previous_button = findViewById(R.id.previous4)
-        next_button = findViewById(R.id.next4)
+        question4 = findViewById(R.id.question4)
+        edittext = findViewById(R.id.APIKey)
+        submitbutton = findViewById(R.id.submitbutton)
 
-        next_button.setOnClickListener {
-            val intent = Intent(this, FifthActivity::class.java)
+        submitbutton.setOnClickListener {
+            val intent = Intent(this,FifthActivity::class.java)
+            APIKey = edittext.text.toString()
+            intent.putExtra("APIKey", APIKey)
             startActivity(intent)
         }
+
         previous_button.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
