@@ -18,11 +18,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //title = "Twitter post by job"
+        title = "Twitter post by job"
         editText = findViewById(R.id.jobfield)
         question1 = findViewById(R.id.question)
         submitbutton = findViewById(R.id.submitbutton)
         submitbutton.setOnClickListener {
+            // send to third activity make stock image for second
             val intent = Intent(this,SecondActivity::class.java)
             jobname = editText.text.toString()
             intent.putExtra("jobanswer", jobname)
