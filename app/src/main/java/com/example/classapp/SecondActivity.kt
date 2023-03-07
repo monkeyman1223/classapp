@@ -27,9 +27,6 @@ class SecondActivity : AppCompatActivity() {
         private lateinit var previous_button: Button
         private lateinit var AI_Image: ImageView
         private lateinit var whatYouSent: String
-   // val apiKey = System.getenv("OPENAI_API_KEY")
-    //val token = requireNotNull(apiKey)
-    //val openAI = OpenAI(token = token)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val startingIntent = intent
@@ -51,13 +48,4 @@ class SecondActivity : AppCompatActivity() {
         }
     }
 
-    //suspend fun imagecreate() {
-     //   val images = openAI.imageURL(
-      //      creation = ImageCreation(
-      //          prompt = whatYouSent.toString(),
-       //         n = 2,
-       //         size = ImageSize.is1024x1024
-       //     )
-       // )
-   // }
    }
