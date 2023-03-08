@@ -3,20 +3,13 @@ package com.example.classapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.aallam.openai.api.BetaOpenAI
 import com.aallam.openai.api.chat.*
-import com.aallam.openai.api.image.ImageURL
-import com.aallam.openai.client.OpenAI
-import kotlinx.coroutines.delay
 import com.aallam.openai.api.model.ModelId
-import com.aallam.openai.api.model.Model
-import java.util.concurrent.Flow
-import com.aallam.openai.api.chat.chatCompletion
+import com.aallam.openai.client.OpenAI
 
 class ThirdActivity : AppCompatActivity() {
     private lateinit var question3: TextView
@@ -53,7 +46,7 @@ class ThirdActivity : AppCompatActivity() {
             )
         )
     )
-    val completion: ChatCompletion = openAI.chatCompletion(chatCompletionRequest)
+    //val completion: ChatCompletion = openAI.chatCompletion(chatCompletionRequest)
     // or, as flow
-    val completions: Flow<ChatCompletionChunk> = openAI.chatCompletions(chatCompletionRequest)
+    //val completions: Flow<ChatCompletionChunk> = openAI.chatCompletions(chatCompletionRequest)
 }

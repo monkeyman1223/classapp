@@ -66,16 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2"
-        app:srcCompat="@drawable/_f4d8ea7_e9d9_48b7_b70c_819482fb10fb_cover"
+        app:srcCompat="@drawable/work"
         tools:ignore="ContentDescription" />
-
-    <TextView
-        android:id="@+id/answer2"
-        android:layout_width="198dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
