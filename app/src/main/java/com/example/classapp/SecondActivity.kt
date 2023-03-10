@@ -3,23 +3,14 @@
 package com.example.classapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import com.aallam.openai.api.image.ImageCreation
-import com.aallam.openai.api.image.ImageSize
+import androidx.appcompat.app.AppCompatActivity
+import com.aallam.openai.api.BetaOpenAI
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
-import com.aallam.openai.api.BetaOpenAI
-import com.aallam.openai.api.image.ImageURL
-import com.aallam.openai.client.OpenAI
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import com.squareup.picasso.Picasso
 
 class SecondActivity : AppCompatActivity() {
         private lateinit var question3: TextView

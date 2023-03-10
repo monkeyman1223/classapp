@@ -15,9 +15,9 @@ class ThirdActivity : AppCompatActivity() {
     private lateinit var question3: TextView
     private lateinit var next_button: Button
     private lateinit var previous_button: Button
-    val apiKey = System.getenv("OPENAI_API_KEY")
-    val token = requireNotNull(apiKey)
-    val openAI = OpenAI(token = token)
+    //val apiKey = System.getenv("OPENAI_API_KEY")
+    //val token = requireNotNull(apiKey)
+    //val openAI = OpenAI(token = token)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val startingIntent = intent
@@ -37,15 +37,15 @@ class ThirdActivity : AppCompatActivity() {
         }
     }
 
-  private val chatCompletionRequest = ChatCompletionRequest(
-    model = ModelId("gpt-3.5-turbo"),
-    messages = listOf(
-    ChatMessage(
-    role = ChatRole.User,
-    content = "Hello!"
-            )
-        )
-    )
+ // private val chatCompletionRequest = ChatCompletionRequest(
+   // model = ModelId("gpt-3.5-turbo"),
+    //messages = listOf(
+    //ChatMessage(
+    //role = ChatRole.User,
+    //content = "Hello!"
+      //      )
+       // )
+    //)
     //val completion: ChatCompletion = openAI.chatCompletion(chatCompletionRequest)
     // or, as flow
     //val completions: Flow<ChatCompletionChunk> = openAI.chatCompletions(chatCompletionRequest)
