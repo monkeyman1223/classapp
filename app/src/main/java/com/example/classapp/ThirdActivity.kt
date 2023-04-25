@@ -4,12 +4,24 @@ package com.example.classapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import okhttp3.Call
+import okhttp3.Callback
+import okhttp3.MultipartBody
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
+import org.json.JSONObject
+import java.io.IOException
 import com.aallam.openai.api.BetaOpenAI
 import com.aallam.openai.api.chat.*
 import com.aallam.openai.api.model.ModelId
 import com.aallam.openai.client.OpenAI
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class ThirdActivity : AppCompatActivity() {
     private lateinit var question3: TextView
@@ -36,17 +48,4 @@ class ThirdActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
- // private val chatCompletionRequest = ChatCompletionRequest(
-   // model = ModelId("gpt-3.5-turbo"),
-    //messages = listOf(
-    //ChatMessage(
-    //role = ChatRole.User,
-    //content = "Hello!"
-      //      )
-       // )
-    //)
-    //val completion: ChatCompletion = openAI.chatCompletion(chatCompletionRequest)
-    // or, as flow
-    //val completions: Flow<ChatCompletionChunk> = openAI.chatCompletions(chatCompletionRequest)
 }

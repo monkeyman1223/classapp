@@ -23,5 +23,5 @@ class FifthActivity : AppCompatActivity() {
             val intent = Intent(this, ForthActivity::class.java)
             startActivity(intent)
         }
-    }
+}
 }
